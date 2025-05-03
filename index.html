@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>System Failure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: black;
+      color: red;
+      font-family: monospace;
+      text-align: center;
+      overflow: hidden;
+      height: 100vh;
+    }
+    .skull {
+      font-size: 100px;
+      margin-top: 30%;
+      animation: shake 0.5s infinite alternate;
+    }
+    @keyframes shake {
+      from { transform: rotate(-5deg); }
+      to { transform: rotate(5deg); }
+    }
+  </style>
+  <script>
+    setTimeout(() => {
+      document.body.innerHTML = '<h1 style="color:lime">PRANK OVER. You survived!</h1>';
+    }, 60000); // show message after 60 seconds
+  </script>
+</head>
+<body>
+  <div class="skull">☠</div>
+  <h2>Mobile LOCKDOWN</h2>
+  <h3>Do NOT touch anything...</h3>
+</body>
+</html>
